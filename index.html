@@ -12,9 +12,26 @@
       <div class="circle circle2"></div>
       <div class="form">
         <h1>Sign In</h1>
-        <form>
-          <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
+        <form
+          name="RegForm"
+          action="/submit.php"
+          onsubmit="return Valid()"
+          method="post"
+        >
+          <input
+            type="text"
+            placeholder="Username"
+            name="Username"
+            id="inputName"
+            class="input"
+          />
+          <input
+            type="password"
+            placeholder="Password"
+            name="Password"
+            id="inputPassword"
+            class="input"
+          />
           <button type="submit">Submit</button>
           <div class="forgot-signup">
             <a href="#">Forgot password</a>
@@ -23,5 +40,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
